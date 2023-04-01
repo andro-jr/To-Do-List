@@ -45,16 +45,16 @@ const getlocalStorage = () => {
     listContainer.innerHTML = '';
     const lists = JSON.parse(localStorage.getItem('toDoList'));
 
-    if(!lists) return;
-    
-    //Guard
-    if (lists.length === 0){
+        //Guard
+    if(!lists || lists.length === 0) {
         listContainer.insertAdjacentHTML('beforeend', `
             <div style="color:#363636;text-align:center;">
                 No tasks available, add into the list.
             </div>
         `);
-    }
+
+        return
+    };
 
     toDoLists = lists;
     toDoLists.forEach(item => {
