@@ -44,8 +44,8 @@ const getlocalStorage = () => {
 
     listContainer.innerHTML = '';
     const lists = JSON.parse(localStorage.getItem('toDoList'));
-    console.log(lists)
-    console.log(lists.length)
+
+    if(!lists) return;
     
     //Guard
     if (lists.length === 0){
@@ -54,8 +54,6 @@ const getlocalStorage = () => {
                 No tasks available, add into the list.
             </div>
         `);
-
-        return
     }
 
     toDoLists = lists;
