@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <section id="main-content">
+        <div class="container container-left">
+            <h3>To Do List</h3>
+            <div class="to-do-list-box">
+
+            </div>
+           
+        </div>
+        <div class="container container-right">
+            <div class="to-do-form-box to-do-box">
+                <h2 class="form-heading">Add task</h2>
+                <form action="" class="to-do-form">
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input type="text" id="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Description</label>
+                        <textarea name="" id="description" cols="30" rows="5" required></textarea>
+                    </div>
+                    <button class="btn add-task-btn" type="submit">Add task</button>
+                </form>
+            </div>
+           
+        </div>
+        <div class="edit-form-overlay hide-form">
+            <div class="overlay-bg"></div>
+            <div class="edit-form">
+                <h2 class="form-heading">Edit Task</h2>
+                <form action="" class="edit-form">
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input type="text" id="edit-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Description</label>
+                        <textarea name="" id="edit-description" cols="30" rows="5" required></textarea>
+                    </div>
+                    <button class="btn edit-submit-btn" >Save</button>
+                    <button class="btn cancel-btn">Cancel</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
